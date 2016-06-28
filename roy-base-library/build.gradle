@@ -1,0 +1,59 @@
+apply plugin: 'com.android.library'
+
+android {
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile "junit:junit:$rootProject.ext.junitVersion"
+    compile "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    compile "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
+    compile 'com.google.code.gson:gson:2.3.1'
+
+//    compile 'com.github.ybq:Android-SpinKit:1.0.3'
+    compile('com.github.afollestad.material-dialogs:commons:0.8.5.8@aar') {
+        transitive = true
+    }
+}
+/**
+ *
+ //复制到project.gradle文件里
+ repositories {
+ jcenter()
+ maven { url "https://jitpack.io" }
+ }
+
+ def versionMajor = 1
+ def versionMinor = 0
+ def versionPatch = 0
+
+ ext {
+ versionCode = versionMajor * 100 + versionMinor * 10 + versionPatch
+ versionName = "${versionMajor}.${versionMinor}.${versionPatch}"
+
+ // Sdk and tools
+ minSdkVersion = 15
+ targetSdkVersion = 23
+ compileSdkVersion = 23
+ buildToolsVersion = "23.0.3"
+
+ // App dependencies
+ supportLibraryVersion = '23.4.0'
+ junitVersion = '4.12'
+ }
+ */

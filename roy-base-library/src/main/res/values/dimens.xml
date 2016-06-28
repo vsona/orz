@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Define standard dimensions to comply with Holo-style grids and rhythm. -->
+
+    <dimen name="margin_tiny">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_huge">64dp</dimen>
+
+    <!-- Semantic definitions -->
+
+    <dimen name="horizontal_page_margin">@dimen/margin_medium</dimen>
+    <dimen name="vertical_page_margin">@dimen/margin_medium</dimen>
+
+        <!--<dimen name="fab_margin">16dp</dimen>-->
+        <dimen name="sp12">12sp</dimen>
+        <dimen name="sp14">14sp</dimen>
+        <dimen name="sp16">16sp</dimen>
+        <dimen name="sp18">18sp</dimen>
+        <dimen name="sp20">20sp</dimen>
+        <dimen name="sp22">22sp</dimen>
+        <dimen name="sp24">24sp</dimen>
+        <dimen name="sp26">26sp</dimen>
+        <dimen name="sp28">28sp</dimen>
+        <dimen name="sp30">30sp</dimen>
+        <dimen name="sp36">36sp</dimen>
+        <dimen name="sp40">40sp</dimen>
+
+
+        <dimen name="roy_common_text">@dimen/sp14</dimen>
+        <dimen name="roy_title_text">@dimen/sp18</dimen>
+        <dimen name="roy_title_big_text">@dimen/sp36</dimen>
+
+</resources>

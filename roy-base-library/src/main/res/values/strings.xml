@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BaseLibrary</string>
+    <string name="network_not_available">网络连接不可用</string>
+    <string name="loading">加载中...</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <net.vsona.baselibrary.refresh.CustomSwipeRefreshLayout
+        android:id="@id/common_refreash_swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <FrameLayout
+            android:id="@+id/web_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </net.vsona.baselibrary.refresh.CustomSwipeRefreshLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progress_horizontal"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_gravity="top"
+        android:max="100" />
+</merge>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="roy_recycle_view" type="id"/>
+    <item name="roy_list_view" type="id"/>
+    <item name="roy_grid_view" type="id"/>
+
+    <item name="roy_title" type="id"/>
+    <item name="roy_image" type="id"/>
+    <item name="roy_desc" type="id"/>
+    <item name="roy_back" type="id"/>
+    <item name="roy_text" type="id"/>
+    <item name="roy_pager" type="id"/>
+    <item name="roy_toolbar" type="id"/>
+
+    <item name="roy_go" type="id"/>
+
+    <item name="roy_content_frame" type="id"/>
+    <item name="roy_content_frame_fragment" type="id"/>
+
+    <item name="common_refreash_swipe_layout" type="id"/>
+</resources>
