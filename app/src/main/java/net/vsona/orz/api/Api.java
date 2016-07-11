@@ -2,8 +2,13 @@ package net.vsona.orz.api;
 
 public class Api {
 
-    public static IApiService getService(){
-        return RetrofitClient.createApi(IApiService.class);
+    private static IJokeApiService sJokeService;
+
+    public static IJokeApiService getJokeService() {
+        if (sJokeService == null) {
+            sJokeService = RetrofitClient.createApi(IJokeApiService.class, RetrofitClient.getJokeRetrofit());
+        }
+        return sJokeService;
     }
 
 }

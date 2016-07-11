@@ -45,7 +45,7 @@ public class JokePresenter implements JokeContract.Presenter {
 
     public void loadList(final int page) {
         System.out.println("JokePresenter.loadList");
-        Api.getService()
+        Api.getJokeService()
                 .getJoke(page)
                 .subscribeOn(Schedulers.io())
                 .map(new Func1<JokeEntity, List<ContentlistEntity>>() {

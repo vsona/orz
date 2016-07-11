@@ -47,7 +47,7 @@ public class AppModule {
     @Provides
     @Singleton
     ApiService providesApiService(RetrofitManager retrofitManager) {
-        return retrofitManager.getService();
+        return retrofitManager.getJokeService();
     }
 
     @Provides

@@ -2,6 +2,8 @@ package net.vsona.orz.ui.splash;
 
 import android.os.Handler;
 
+import net.vsona.orz.BuildConfig;
+
 import javax.inject.Inject;
 
 
@@ -11,7 +13,7 @@ import javax.inject.Inject;
 public class SplashPrensenter implements SplashContract.Presenter {
 
     private final SplashContract.View mView;
-    private final long minTime = 1888l;
+    private final long minTime = BuildConfig.SPLASH_TIME;
     private long startTime;
     private long endTime;
     //执行操作数

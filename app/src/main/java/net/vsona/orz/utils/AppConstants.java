@@ -18,8 +18,6 @@ public class AppConstants {
     public static String APP_PLATFORM;
     public static String APP_CHANNEL = "dev";
 
-    public static final String BASE_URL = BuildConfig.BASE_URL;
-
 
 
 

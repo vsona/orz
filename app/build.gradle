@@ -13,11 +13,13 @@ android {
     }
     buildTypes {
         debug {
+            buildConfigField "Integer", "SPLASH_TIME", '1000'
             debuggable true
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         release {
+            buildConfigField "Integer", "SPLASH_TIME", '1000'
             debuggable false
             minifyEnabled true
             zipAlignEnabled true
@@ -27,10 +29,12 @@ android {
     }
     productFlavors {
         dev {
+            buildConfigField "String", "BASE_URL_JOKE", '"http://apis.baidu.com/showapi_open_bus/"'
             buildConfigField "String", "BASE_URL", '"http://apis.baidu.com/showapi_open_bus/"'
 
         }
         product {
+            buildConfigField "String", "BASE_URL_JOKE", '"http://apis.baidu.com/showapi_open_bus/"'
             buildConfigField "String", "BASE_URL", '"http://apis.baidu.com/showapi_open_bus/"'
         }
     }
