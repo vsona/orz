@@ -23,7 +23,7 @@ public class MyOkClient {
 
         OkHttpClient.Builder builder = new OkHttpClient.Builder();
 
-        if (AppConstants.debug) {
+        if (AppConstants.sDebug) {
             // Log信息拦截器
             HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor();
             loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
@@ -46,7 +46,7 @@ public class MyOkClient {
 //        Cache cache = new Cache(cacheFile, 1024 * 1024 * 30);
 //        builder.cache(cache).addInterceptor(new CacheInterceptor());
 
-        //开启facebook debug
+        //开启facebook sDebug
 //        builder.addNetworkInterceptor(new StethoInterceptor());
 
         //设置超时

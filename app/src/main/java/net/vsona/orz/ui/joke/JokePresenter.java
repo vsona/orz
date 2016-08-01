@@ -1,6 +1,5 @@
 package net.vsona.orz.ui.joke;
 
-import com.orhanobut.logger.Logger;
 
 import net.vsona.orz.api.Api;
 import net.vsona.orz.domain.ContentlistEntity;
@@ -64,7 +63,6 @@ public class JokePresenter implements JokeContract.Presenter {
                     @Override
                     public void onError(Throwable e) {
                         mNextPage = page;
-                        Logger.e(e.getMessage());
                         mView.showError();
                     }
 

@@ -24,9 +24,9 @@ public class QueryParameterInterceptor implements Interceptor{
         Headers headers = originalRequest.headers();
         HttpUrl modifiedUrl = originalRequest.url().newBuilder()
                 // Provide your custom parameter here
-                .addQueryParameter(AppConstants.FILED_PLATFORM, AppConstants.APP_PLATFORM)
-                .addQueryParameter(AppConstants.FILED_VERSION, AppConstants.APP_VERSION + "")
-                .addQueryParameter(AppConstants.FILED_CHANNEL, AppConstants.APP_CHANNEL)
+                .addQueryParameter(AppConstants.FILED_PLATFORM, AppConstants.sAppPlatform)
+                .addQueryParameter(AppConstants.FILED_VERSION, AppConstants.sAppVersion + "")
+                .addQueryParameter(AppConstants.FILED_CHANNEL, AppConstants.sAppChannel)
                 .build();
 
         //new builder

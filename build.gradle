@@ -9,6 +9,8 @@ buildscript {
         classpath 'com.android.tools.build:gradle:2.1.2'
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
 
+        //hugo
+        classpath 'com.jakewharton.hugo:hugo-plugin:1.2.1'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -27,7 +29,7 @@ task clean(type: Delete) {
 }
 def versionMajor = 0
 def versionMinor = 0
-def versionPatch = 1
+def versionPatch = 2
 
 ext {
     versionCode = versionMajor * 100 + versionMinor * 10 + versionPatch

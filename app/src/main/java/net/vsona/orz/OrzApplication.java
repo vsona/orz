@@ -1,6 +1,8 @@
 package net.vsona.orz;
 
 
+import com.squareup.leakcanary.LeakCanary;
+
 import net.vsona.baselibrary.app.BaseApplication;
 import net.vsona.baselibrary.utils.BaseUtils;
 import net.vsona.orz.utils.AppConstants;
@@ -17,16 +19,21 @@ public class OrzApplication extends BaseApplication {
         super.onCreate();
         initAppComponent();
         initParams();
+        initLeak();
+    }
+
+    private void initLeak() {
+        LeakCanary.install(this);
     }
 
     private void initParams() {
-        AppConstants.APP_PLATFORM = BaseUtils.isTablet(this) ? AppConstants.ANDROID_PAD : AppConstants.ANDROID_PHONE;
-        AppConstants.APP_VERSION = BaseUtils.getAppVersion(this);
-        AppConstants.APP_VERSION_NAME = BaseUtils.getAppVersionName(this);
+        AppConstants.sAppPlatform = BaseUtils.isTablet(this) ? AppConstants.ANDROID_PAD : AppConstants.ANDROID_PHONE;
+        AppConstants.sAppVersion = BaseUtils.getAppVersion(this);
+        AppConstants.sAppVersionName = BaseUtils.getAppVersionName(this);
 
         //init channel
-        if (!AppConstants.debug) {
-            AppConstants.APP_CHANNEL = BaseUtils.getChannel(this);
+        if (!AppConstants.sDebug) {
+            AppConstants.sAppChannel = BaseUtils.getChannel(this);
         }
     }
 

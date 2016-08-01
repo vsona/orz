@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.orhanobut.logger.Logger;
 
 import net.vsona.baselibrary.adapter.BaseItemViewHolder;
 import net.vsona.baselibrary.adapter.BaseRecyclerViewLoadingAdapter;
